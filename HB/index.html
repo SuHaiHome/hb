@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>happy-birthday-2023-12-21</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/fireworks.css" />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <link rel="stylesheet" href="assets/css/cake.css" />
+  </head>
+  <body>
+    <div class="b-1">
+
+      <button onclick="playAudio()" class="button">Click Happy</button>
+        <audio id="birthdayAudio" loop>
+          <source src="assets/audio/music.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+      <canvas id="fireworks"></canvas>
+
+      <img src="assets/images/act.png" class="avatar" />
+      <h1 class="h-text">Happy Birthday</h1>
+      <h2 class="h-text">ZYN</h2>
+      <h3 class="h-text">2023.12.21</h3>
+
+      <div class="card">
+        <div class="back"></div>
+        <div class="front">
+          <div class="cover-shape-large">
+            <div class="shape-diamond"></div>
+            <div class="shape-block"></div>
+          </div>
+          <div class="cover-shape-small">
+            <div class="shape-diamond"></div>
+            <div class="shape-block">
+              <div class="cake">
+                <div class="velas">
+                  <div class="fuego"></div>
+                  <div class="fuego"></div>
+                  <div class="fuego"></div>
+                  <div class="fuego"></div>
+                  <div class="fuego"></div>
+                </div>
+                <div class="cobertura"></div>
+                <div class="bizcocho"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p id="head">
+            <img src="assets/images/act2.png" class="avatar-mini" />
+          </p>
+          <p>
+            May each hour be happy one on this special day. 
+            May the day ahead be more than happy, too, 
+            as all your dreams and plans work out just right for you.
+          </p>
+          <p class="bottom">
+            Sincerely yours <br />
+            RihaiLai <br />
+            2023.12.21
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="assets/js/fireworks.js"></script>
+  <!-- 加载播放策略 -->
+  <script>
+    function playAudio() {
+      var audio = document.getElementById('birthdayAudio');
+      audio.play();
+    }
+  </script>
+</html>
